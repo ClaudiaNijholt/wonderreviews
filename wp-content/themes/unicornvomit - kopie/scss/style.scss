@@ -1,0 +1,83 @@
+$colors: (
+  bg-clr: rgb(230, 230, 230),
+  nav-foot-clr: whitesmoke,
+  txt-clr: black,
+);
+
+@function color($num) {
+  @return map-get($colors, $num);
+}
+
+body{
+  background-color: color(bg-clr);
+}
+nav {
+    overflow: hidden;
+    background-color: color(nav-foot-clr);
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    width: 100%;
+    z-index: 2;
+    ul {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      list-style-type: none;
+      align-items: center;
+      margin: 0;
+      padding: 1rem;
+      li {
+        display: inline;
+        font-size: 1rem;
+        a {
+          color: color(txt-clr);
+          text-decoration: none;
+          padding: 1rem;
+        }
+      }
+      img{
+        width:3%;
+        height: 3%;
+      }
+    }
+  }
+
+div.banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: color(nav-foot-clr);
+  width: 80%;
+  margin: 8% 10% 0% 10%;
+  height:10rem;
+  img {
+    width:80%;
+    height:80%;
+  }
+}
+
+h3.slowgun, h1.h1-homepage{ text-align: center; }
+
+h1.h1-reviewpage{
+  margin-top: 3rem;
+  text-align: center;
+  top:8rem;
+}
+
+div.review{
+  display: flex;
+  // justify-content: flex-start;
+  align-items: center;
+  background-color: color(nav-foot-clr);
+  width: 80%;
+  margin: 5% 10% 0% 10%;
+  height:16rem;
+  div.review-img{
+    left:2rem;
+    align-items: center;
+    background-color: coral;
+    width:40%;
+    height:100%;
+  }
+}

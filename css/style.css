@@ -1,0 +1,88 @@
+body {
+  background-color: #e6e6e6;
+}
+
+nav {
+  overflow: hidden;
+  background-color: whitesmoke;
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+  width: 100%;
+  z-index: 2;
+}
+
+nav ul {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  list-style-type: none;
+  align-items: center;
+  margin: 0;
+  padding: 1rem;
+}
+
+nav ul li {
+  display: inline;
+  font-size: 1rem;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav ul img {
+  width: 3%;
+  height: 3%;
+}
+
+div.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  width: 80%;
+  margin: 8% 10% 0% 10%;
+  height: 10rem;
+}
+
+div.banner img {
+  width: 80%;
+  height: 80%;
+}
+
+h3.slowgun,
+h1.h1-homepage {
+  text-align: center;
+}
+
+h1.h1-reviewpage {
+  margin-top: 3rem;
+  text-align: center;
+  top: 8rem;
+}
+
+div.review {
+  display: flex;
+  align-items: center;
+  background-color: whitesmoke;
+  width: 80%;
+  margin: 5% 10% 0% 10%;
+  height: 16rem;
+}
+
+div.review div.review-img {
+  display: flex;
+  left: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: wheat;
+  width: 40%;
+  height: 100%;
+}
+
+div.review div.review-text {
+  display: flex;
+}

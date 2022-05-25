@@ -1,0 +1,99 @@
+body {
+  background-color: #e6e6e6;
+}
+
+nav {
+  overflow: hidden;
+  background-color: whitesmoke;
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+  width: 100%;
+  z-index: 2;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 1rem;
+}
+
+nav ul li {
+  display: inline;
+  font-size: 1rem;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav ul img {
+  width: 3%;
+  height: 3%;
+}
+
+div.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: whitesmoke;
+  width: 80%;
+  margin: 8% 10% 0% 10%;
+  height: 10rem;
+}
+
+div.banner img {
+  width: 80%;
+  height: 80%;
+}
+
+h3.slowgun, h1.h1-homepage {
+  text-align: center;
+}
+
+h1.h1-reviewpage {
+  text-align: center;
+  top: 8rem;
+}
+
+div.review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: whitesmoke;
+  width: 80%;
+  margin: 5% 10% 0% 10%;
+  height: 16rem;
+}
+
+div.review div.review-img {
+  left: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: coral;
+  width: 40%;
+  height: 100%;
+}
+/*# sourceMappingURL=style.css.map */
