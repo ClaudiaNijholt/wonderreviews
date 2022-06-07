@@ -8,8 +8,11 @@ $colors: (
   @return map-get($colors, $num);
 }
 
-body {
+html, body {
+  width: 100%;
+  margin: 0rem;
   background-color: color(bg-clr);
+  font-family: "Archivo Narrow", sans-serif;
 }
 nav {
   overflow: hidden;
@@ -76,15 +79,100 @@ div.review {
   margin: 5% 10% 0% 10%;
   height: 16rem;
   div.review-img {
+    padding-left: 1.5rem;
     display: flex;
     left: 2rem;
     justify-content: center;
     align-items: center;
-    background-color: wheat;
     width: 40%;
     height: 100%;
   }
   div.review-text {
     display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    padding-left: 3rem;
+    h1 {
+      padding: 0rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 0.7rem;
+      margin: 0.5rem;
+    }
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
   }
+  div {
+    width:100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    button {
+      width: 15rem;
+      margin-bottom: 1rem;
+      padding: 0.7rem;
+      border: none;
+      background-color: color(bg-clr);
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+}
+
+div.single-review{
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  div.single-review-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+  }
+  div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    div.single-review-text{
+      width: 100%;
+      h1{
+        text-align: center;
+      }
+      div{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+      }
+      p.content{
+        text-align: center;
+      }
+    }
+  }
+}
+
+footer {
+  margin: 3rem 0rem 0rem 0rem;
+  bottom: 0rem;
+  overflow: hidden;
+  display: flex;
+  bottom: 0rem;
+  left: 0rem;
+  width: auto;
+  padding: 1rem;
+  font-family: "Archivo Narrow", sans-serif;
+  background-color: white;
+  color: black;
+  justify-content: center;
 }

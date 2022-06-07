@@ -29,14 +29,18 @@ $arguments = [
 $reviewsItemCollection = get_posts($arguments);
 
 foreach ($reviewsItemCollection as $review) {
-    var_dump(get_permalink($review));
+    $link = get_permalink($review->ID);
+
 ?>
     <div class="review">
         <div class="review-img"><img src="<?php echo get_field('image', $review->ID) ?>" alt=""></div>
         <div class="review-text">
             <h1><?php echo $review->post_title; ?></h1>
-            <p><?php echo get_field('score', $review->ID) ?>/10</p>
             <p>Posted on: <?php echo $review->post_date ?></p>
+            <p><?php echo get_field('score', $review->ID) ?>/10</p>
+            <div class="col-12">
+                <button><a href="<?php echo $link; ?>">Lees Review</a></button>
+            </div>
         </div>
     </div>
 <?php

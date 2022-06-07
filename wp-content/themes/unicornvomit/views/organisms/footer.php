@@ -1,3 +1,3 @@
 <footer>
-    FOOTER
+    WonderReviews. Inc. 2022
 </footer>
